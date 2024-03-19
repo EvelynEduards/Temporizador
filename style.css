@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-temporizador {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.cont-temporizador .bloque {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #555; /* Agregamos un borde alrededor de cada bloque */
+    border-radius: 10px; /* Añadimos bordes redondeados */
+    padding: 10px; /* Añadimos un poco de espacio interno */
+}
+
+.cont-temporizador .bloque div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #555;
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.5) inset;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    width: 100px;
+    height: 70px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Añadimos una transición para el cambio de color de fondo */
+}
+
+.cont-temporizador .bloque div:hover {
+    background-color: #777; /* Cambiamos el color de fondo al pasar el cursor sobre el contador */
+}
+
+.cont-temporizador .bloque p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #aaa;
+    text-align: center;
+}
